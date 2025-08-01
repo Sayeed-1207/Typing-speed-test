@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Speed Typing Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Speed Typing Test ⌨️</h1>
+
+    <div class="menu">
+      <input type="text" id="username" placeholder="Enter your name">
+      <select id="difficulty">
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
+      </select>
+      <input type="number" id="timeLimit" placeholder="Time (sec)" min="10" value="30">
+      <button onclick="startTest()">Start Test</button>
+    </div>
+
+    <p id="targetText"></p>
+    <textarea id="userInput" placeholder="Start typing here..." disabled></textarea>
+
+    <div class="info">
+      <span id="timer">Time: 30</span>
+      <span id="wpm">WPM: 0</span>
+      <span id="errors">Errors: 0</span>
+    </div>
+
+    <div class="results" id="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
