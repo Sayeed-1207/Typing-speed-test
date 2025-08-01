@@ -2,9 +2,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: url('Sayeed.jpg') no-repeat center fixed;
+  background: url('Sayeed.jpg') no-repeat center center fixed;
   background-size: cover;
-  color: blue;
+  color: white;
 }
 
 .overlay {
