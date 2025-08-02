@@ -78,7 +78,30 @@ function updateTest(name) {
     endTest(name);
   }
 }
+const textArea = document.querySelector("textarea");
+const bgMusic = document.getElementById("bgMusic");
 
+let musicPlayed = false;
+
+textArea.addEventListener("input", () => {
+  if (!musicPlayed) {
+    bgMusic.play();
+    musicPlayed = true;
+  }
+});
+let typingTimer;
+textArea.addEventListener("input", () => {
+  if (!musicPlayed) {
+    bgMusic.play();
+    musicPlayed = true;
+  }
+
+clearTimeout(typingTimer);
+typingTimer = setTimeout(() => {
+bgMusic.pause();
+musicPlayed = false; 
+  }, 10000);
+});
 function endTest(name) {
   clearInterval(timer);
   document.getElementById("userInput").disabled = true;
