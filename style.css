@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: url('Beautiful background.jpg') no-repeat center fixed;
+  background: url('Beautiful background.jpg') no-repeat center center fixed;
   background-size: cover;
   color: white;
 }
@@ -74,3 +74,4 @@ button:hover {
     font-size: 1.8rem;
   }
 }
+
